@@ -13,42 +13,4 @@ Draft a report explaining my findings in relation to controls used by the organi
 
 ![First crack](https://user-images.githubusercontent.com/81494714/138174078-143559aa-cb86-40e5-bb2a-f73b27957254.jpg)
 
-##  Report discussing my findings 
 
-Dear Sir/Madam, 
-
-I am writing to provide my findings and conclusions with regards to password controls used by your organization and my proposed uplifts. 
-The cryptographic hash function MD5 (Message Digest algorithm) was used to protect the compromised passwords and provided very little protection. MD5 suffers from extensive vulnerabilities such as collisions. Upon first try of cracking the hashes using hash cat and the rockyou.txt word list, 68% of the passwords were recovered. Upon the second try, all of the passwords were recovered. 
-
-Therefore, my advice for controls that could be implemented to make cracking much harder in the event of a password database leak again would be to use stronger hashing algorithms such as SHA (Secure hash algorithm) along with salting to prevent the usage of rainbow tables. 
-
-In addition, after cracking all the passwords, the following things could be told about the password policy: 
--	There are no requirements for passwords to be created with different character types or symbols
--	The minimum length is 6 characters 
--	There is no prevention of passwords to include usernames or birthdays 
--	
-Hence, these suggestions are made for the password policy in the future: 
--	Increase the length requirement to at least 9 characters
--	Prevent users from creating passwords that contain usernames or birthdays 
--	Passwords much include capital, lower case, numbers, and symbols 
--	Raise awareness of password managers so users could create stronger passwords that are long and complex without having to remember them 
--	
-I hope that my findings will be helpful to your organization and kindly please find below the list of passwords cracked. 
-Thank you. 
-
-Best regards,
-Natalie Wu 
-
-List of cracked passwords: 
-7c6a180b36896a0a8c02787eeafb0e4c:password1        d8578edf8458ce06fbc5bb76a58c5ca4:qwerty
-96e79218965eb72c92a549dd5a330112:111111      25d55ad283aa400af464c76d713c07ad:12345678
-e99a18c428cb38d5f260853678922e03:abc123             e10adc3949ba59abbe56e057f20f883e:123456
-25f9e794323b453885f5181f1b624d0b:123456789   5f4dcc3b5aa765d61d8327deb882cf99:password
-fcea920f7412b5da7be0cf42b8c93759:1234567        6c569aabbf7775ef8fc570e228c16b98:password!
-3f230640b78d7e71ac5514e57935eb69:qazxsw            f6a0cb102c62879d397b12b62c092c06:bluered
-917eb5e9d6d6bca820922a0c6f7cc28b:Pa$$word1    1f5c5683982d7c3814d4d9e6d749b21e:Spuffyffet12
-9b3b269ad0a208090309f091b3aba9db: Flamesbria2001
-16ced47d3fc931483e24933665cded6d: Oranolio1994
-8d763385e0476ae208f21bc63956f748: moodie00
-defebde7b6ab6f24d5824682a16c3ae4: nAbox!1
-bdda5f03128bcbdfa78d8934529048cf: Bandalls
